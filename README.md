@@ -51,7 +51,7 @@ Single page application built on React.js app, featuring new section of the Home
 
 A user is able to add, remove extras to his/her quote. Moreover, the user is always visually able to see which addons he/she selected along with the accurate total price, having a convenient ability to toggle in between monthly and annual quote price.
 
-The task was approached using functional components with hooks(useState, useEffect and useFetch), deriving all the data from mock API for the purpose of the task. Navbar was added and made responsive for a better experience.
+The task was approached using functional components with hooks(useState, useEffect and useFetch), deriving all the data from mock API for the purpose of the task. Navbar was added and made responsive for a better experience. Styled components were used for the wrapping containers with a purpose of demostration of the knowledge and understanding of the library. All logic functionality has been accomplished using states to properly rerender the React DOM. 
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -65,6 +65,9 @@ Frameworks/libraries/languages used:
 - [Node.js](https://nodejs.org/en/)
 - [Bootstrap Navbar](https://getbootstrap.com/docs/4.0/components/navbar/)
 - [CodePen.io](https://codepen.io/DToxVanilla)
+- [Styled Components](https://styled-components.com/docs/basics)
+- [React Fetch Hook](https://www.npmjs.com/package/react-fetch-hook)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
