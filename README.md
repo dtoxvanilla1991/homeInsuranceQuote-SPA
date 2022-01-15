@@ -45,7 +45,7 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project
+## About The App
 
 Single page application built on React.js app, featuring new section of the Home Insurance product. This new section is a quote summary page which allows the user to add various addons to their quote.
 
@@ -90,7 +90,7 @@ $ npm start
 
 Yuri Avdiyevski - [@dtoxvanilla](https://twitter.com/dtoxvanilla) - dtoxvanilla@gmail.com
 
-Project Link: [Insurance Quote SPA Files](https://github.com/dtoxvanilla1991/CUBE-Project)
+Project Link: [Insurance Quote SPA Files](https://github.com/dtoxvanilla1991/homeInsuranceQuote-SPA)
 
 <!-- Deployed Project Link: [Live Cube Project](https://cube-project.herokuapp.com/) -->
 
