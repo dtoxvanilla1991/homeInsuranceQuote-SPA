@@ -1,4 +1,5 @@
-import happyPic from '../images/family.jpg';
+import happyPic from '../images/family-big.jpg';
+import happyPicMidSize from '../images/family-midsize.jpg';
 import Button from './Button';
 import { Link } from 'react-router-dom';
 
@@ -14,7 +15,10 @@ const About = () => {
             <div>
                 <figure style={{marginTop: "4em"}}>
                      <span className="about-img">
-                          <img src={happyPic} alt="module05jpg" />
+                         <picture>
+                          <source srcset={happyPic} alt="familyPicture" media="(min-width: 900px)"></source>
+                          <img  src={happyPicMidSize} alt="familyPicture" media="(min-width: 700px)" />
+                         </picture>
                      </span>
                 </figure>
                 <div>
