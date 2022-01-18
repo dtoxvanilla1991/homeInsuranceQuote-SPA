@@ -7,7 +7,7 @@ const Navigation = () => {
         <div>
           <Navbar bg="dark" variant="dark" expand="md"  fluid="true" fixed="top">
   <Container>
-  <Navbar.Brand href="#home">
+  <Navbar.Brand href="/">
         <img
           alt=""
           src= {homeLogo}
@@ -20,9 +20,9 @@ const Navigation = () => {
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="ms-auto">
-        <Nav.Link href="#getnewquote">New Quote</Nav.Link>
-        <Nav.Link href="#billing">Billing</Nav.Link>
-        <Nav.Link href="#contactus">Contact Us</Nav.Link>
+        <Nav.Link href="/newquote">New Quote</Nav.Link>
+        <Nav.Link href="/billing">Billing</Nav.Link>
+        <Nav.Link href="/contactus">Contact Us</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Container>

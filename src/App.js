@@ -5,6 +5,10 @@ import Body from "./components/Body";
 import { useState, useEffect } from 'react';
 import useFetch from "react-fetch-hook";
 import AddonsCard from "./components/AddonsCard";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+
 
 function App() {
   const [userData, setData] = useState(null);
@@ -89,14 +93,23 @@ function App() {
 
   }
 
-  return (
-    <div className="container">
-      <Navigation />
-      <PageWrapper>
-      <Header userData={userData} addonDetials={addons} onToggle={togglePrice} price={quotePrice}/>
-      <Body data={data} toggleExtras={toggleExtras} renderAddons={renderAddons} pricingUpdate={pricingUpdate}/>
-      </PageWrapper>
-    </div>
+  return (<Router>
+              <div className="container">
+                <Navigation />
+                <PageWrapper>
+            <Routes>
+                <Route path='/' element={
+                  <>
+                    <Header userData={userData} addonDetials={addons} onToggle={togglePrice} price={quotePrice} />
+                    <Body data={data} toggleExtras={toggleExtras} renderAddons={renderAddons} pricingUpdate={pricingUpdate} />
+                  </> 
+                } />
+                <Route path='/about' element={<About />} />
+            </Routes>
+                <Footer />
+                </PageWrapper>
+              </div>
+          </Router>
   );
 }
 

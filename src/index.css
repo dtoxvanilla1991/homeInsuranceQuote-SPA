@@ -75,6 +75,30 @@ body {
 	-webkit-backface-visibility: hidden;
 	-moz-osx-font-smoothing: grayscale;
 }
+
+footer {
+
+	text-align: center;
+   margin-top: 1em;
+	padding-bottom: 1em;
+	border-top: 1px solid #8c8b8b;
+
+  }
+
+.about {
+
+	display: block;
+	flex-wrap: wrap;
+	text-align: center;
+	align-content: center;
+   margin-bottom: 110px;
+
+}
+
+.link{
+   text-decoration: none;
+}
+
 /* buttons styling */
 
 .button--size-s {
