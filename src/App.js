@@ -1,13 +1,12 @@
 import Header from "./components/Header";
 import Navigation from "./components/Navbar";
-import {PageWrapper} from './components/styles';
 import Body from "./components/Body";
 import { useState, useEffect } from 'react';
 import useFetch from "react-fetch-hook";
 import AddonsCard from "./components/AddonsCard";
 import Footer from "./components/Footer";
 import About from "./components/About";
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 function App() {
@@ -42,6 +41,7 @@ function App() {
       <p>Message: ${error.statusText}</p>
     </div>
   }
+  //getting original data:
   if(!quotePrice){
     setPrice([userData[0].monthlyPrice, 'month']);
   }
@@ -58,11 +58,34 @@ function App() {
  const renderAddons = () => {
 
     return addons.map( (addon) => {
+
+        //calculating the total quote price:
+        const pricingUpdate = (displayedAddonPrice, timeframe, id) => {
+          let selectedAddonCard = addons.find(addon => addon.id === id);
+
+            if(selectedAddonCard.active === true){
+              let newSum = (Number(quotePrice[0]) + displayedAddonPrice).toFixed(2);
+              setPrice([newSum, timeframe]);
+            } else if(selectedAddonCard.active === false){
+              let newSum = (Number(quotePrice[0]) - displayedAddonPrice).toFixed(2);
+              setPrice([newSum, timeframe]);
+            }
+        }
+        //toggle annual-monthly:
+        const priceDisplayed = () => priceChange ? addon.annualPrice : addon.monthlyPrice;
+        //toggle annual-monthly timeframe text:
+        const timeDisplayed = () => priceChange ? 'year' : 'month';
+        //Button innerText:
+        const buttonText = () => !addon.active ? "Remove this addon" : 'Select this addon';
+        //Style of the selected card:
+        const stylingCardToggle = () => !addon.active ? "addonsCard-selected" : "addonsCard-notSelected";
+        //Button innerText:
+        const SelectedCard = (id) => {setAddons(addons.map((addon) => addon.id === id ? {...addon, added: !addon.added} : addon))};
     let key = Math.floor(Math.random() * 10000) +1;
-    return <AddonsCard key={key} details={addon} buttonTitle={!addon.active ? "Remove this addon" : 'Select this addon'} toggleExtras={toggleExtras} price={priceChange ? addon.annualPrice : addon.monthlyPrice} pricingUpdate={pricingUpdate} timeframe={priceChange ? 'year' : 'month'} onSelected={(id) => {setAddons(addons.map((addon) => addon.id === id ? {...addon, added: !addon.adeed} : addon))}} Selected={!addon.active ? "addonsCard-selected" : "addonsCard-notSelected"}/>;
+    return <AddonsCard key={key} details={addon} buttonTitle={buttonText()} toggleExtras={toggleExtras} price={priceDisplayed()} pricingUpdate={pricingUpdate} timeframe={timeDisplayed()} SelectedCard={()=> SelectedCard()} Selected={stylingCardToggle()}/>;
     })
  }
-//toggling monthly/yearly view:
+//toggling monthly/yearly view on PriceCard:
  const togglePrice = () => {
   setAddons(data);
   setPriceChange(!priceChange);
@@ -73,42 +96,29 @@ function App() {
   }
 
 };
+
   //visually toggling active addons:
   const toggleExtras = (id) => {
     //visually selecting clicked addon card
     setAddons(addons.map((addon) => addon.id === id ? {...addon, active: !addon.active} : addon));
     }
-  //calculating the total quote price:
-  const pricingUpdate = (displayedAddonPrice, timeframe, id) => {
-      let selected = addons.find(addon => addon.id === id);
-      console.log(selected);
-        if(selected.active === true){
-          let newSum = Number((quotePrice[0] + displayedAddonPrice).toFixed(2));
-          setPrice([newSum, timeframe]);
-        } else if(selected.active === false){
-          let newSum = Number((quotePrice[0] - displayedAddonPrice).toFixed(2));
-          setPrice([newSum, timeframe]);
-        }
-      
-
-  }
 
   return (<Router>
-              <div className="container">
+              <>
                 <Navigation />
-                <PageWrapper>
-            <Routes>
-                <Route path='/' element={
-                  <>
-                    <Header userData={userData} addonDetials={addons} onToggle={togglePrice} price={quotePrice} />
-                    <Body data={data} toggleExtras={toggleExtras} renderAddons={renderAddons} pricingUpdate={pricingUpdate} />
-                  </> 
-                } />
-                <Route path='/about' element={<About />} />
-            </Routes>
-                <Footer />
-                </PageWrapper>
-              </div>
+                <div className="PageWrapper">
+                  <Routes>
+                      <Route path='/' element={
+                        <>
+                          <Header userData={userData} addonDetials={addons} onToggle={togglePrice} price={quotePrice} />
+                          <Body renderAddons={renderAddons} />
+                        </> 
+                      } />
+                      <Route path='/about' element={<About />} />
+                  </Routes>
+                  <Footer />
+                </div>
+              </>
           </Router>
   );
 }
