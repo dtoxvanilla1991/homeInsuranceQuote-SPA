@@ -1,5 +1,5 @@
 const QuoteCard = ({data}) => {
-
+    console.log(data)
     const userData = data[0];
     const date = new Date(userData.startDate);
 

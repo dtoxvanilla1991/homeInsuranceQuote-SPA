@@ -2,7 +2,7 @@ import QuoteCard from './QuoteCard';
 import PriceCard from './PriceCard';
 
 
-const Header = ({userData, price, addonDetials, onToggle}) => {
+const Header = ({userData, price, onToggle}) => {
 
     return (
         <header className="header">

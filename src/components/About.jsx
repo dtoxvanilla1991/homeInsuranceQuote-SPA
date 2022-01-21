@@ -1,7 +1,7 @@
 import happyPic from '../images/family-big.jpg';
 import happyPicMidSize from '../images/family-midsize.jpg';
 import Button from './Button';
-import { Link } from 'react-router-dom';
+import{ BrowserRouter as Router, Link } from 'react-router-dom';
 
 const About = () => {
     return (
@@ -16,14 +16,16 @@ const About = () => {
                 <figure style={{marginTop: "4em"}}>
                      <span className="about-img">
                          <picture>
-                          <source srcset={happyPic} alt="familyPicture" media="(min-width: 900px)"></source>
+                          <source srcSet={happyPic} alt="familyPicture" media="(min-width: 900px)"></source>
                           <img  src={happyPicMidSize} alt="familyPicture" media="(min-width: 700px)" />
                          </picture>
                      </span>
                 </figure>
                 <div>
                     <h4 className="promo-head" style={{marginBottom: "1em"}}>Vision and purpose</h4>
+                    <Router>
                     <Link to="/" className='link'><Button buttonTitle="READ MORE" className="promo" title="Open link in this window" target="">Read more</Button></Link>
+                    </Router>
                 </div>
             </div>
         </div>
