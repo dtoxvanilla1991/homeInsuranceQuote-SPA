@@ -23,9 +23,7 @@ const About = () => {
                 </figure>
                 <div>
                     <h4 className="promo-head" style={{marginBottom: "1em"}}>Vision and purpose</h4>
-                    <Router>
                     <Link to="/" className='link'><Button buttonTitle="READ MORE" className="promo" title="Open link in this window" target="">Read more</Button></Link>
-                    </Router>
                 </div>
             </div>
         </div>

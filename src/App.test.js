@@ -9,6 +9,5 @@ test('rendering without crashes', () => {
 
     const div = document.createElement('div');
     ReactDom.render(<App />, div);
-    ReactDom.render(<About />, div);
 
 });
