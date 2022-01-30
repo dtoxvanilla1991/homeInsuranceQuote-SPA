@@ -7,13 +7,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.PageWrapper {
-	padding-top: 80px;
-	display: flex;
-	flex-direction: column;
-	margin: auto;
-  	width: 65%;
-}
 .extras {
 	display: inline-flex;
 	flex-direction: row;
@@ -52,6 +45,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-radius: 15px;
 
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
@@ -63,20 +57,22 @@ body {
   text-align: center;
   margin-bottom: 2em;
   position: relative;
+  border-radius: 40px;
 
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);;
 }
 .addonsCard-selected {
   width: 45%;
   height: 240px;
-  border: 1px solid black;
+  border: 2px solid #3e498a;
   padding: 2rem;
   text-align: center;
   margin-bottom: 2em;
   background-color: #cad0f1;
   position: relative;
+  border-radius: 40px;
 
-  box-shadow: 0 20px 40px rgba(0,0,0,0.30), 0 15px 12px rgba(31, 51, 161, 0.4);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.30), 0 15px 12px rgba(31, 51, 161, 0.4) inset;
 }
 .cardTitle {
 	display: flex;
@@ -106,15 +102,6 @@ body {
 	-webkit-backface-visibility: hidden;
 	-moz-osx-font-smoothing: grayscale;
 }
-
-footer {
-
-	text-align: center;
-   margin-top: 1em;
-	padding-bottom: 1em;
-	border-top: 1px solid #8c8b8b;
-
-  }
 
 .about {
 

@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { Navbar, Container, Nav } from 'react-bootstrap';
-import homeLogo from '../images/home.svg';
+import homeLogo from '../assets/home.svg';
 
 const Navigation = () => {
     return (

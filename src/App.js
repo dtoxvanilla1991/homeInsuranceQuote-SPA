@@ -1,13 +1,13 @@
 import Navigation from "./components/Navbar";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy } from "react";
 import useFetch from "react-fetch-hook";
 import AddonsCard from "./components/AddonsCard";
-import Footer from "./components/Footer";
-import About from "./components/About";
+import Footer from "./components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import GetNewQuote from "./components/GetNewQuote";
 import Default404 from "./components/Default404";
-import loadingGif from './images/loading.gif';
+import loadingGif from './assets/loading.gif';
+import styles from './App.module.css';
 
 function App() {
   const [userData, setData] = useState(null);
@@ -131,10 +131,13 @@ function App() {
     );
   };
 
+  //lazing loading necessary files:
+  const About = lazy(() => import('./components/About'));
+
   return (
     <>
       <Navigation />
-      <div className="PageWrapper">
+      <div className={styles.pageWrapper}>
         <Routes>
           <Route
             path="/"
