@@ -1,7 +1,7 @@
 import happyPic from '../images/family-big.jpg';
 import happyPicMidSize from '../images/family-midsize.jpg';
 import Button from './Button';
-import{ BrowserRouter as Router, Link } from 'react-router-dom';
+import{Link } from 'react-router-dom';
 
 const About = () => {
     return (

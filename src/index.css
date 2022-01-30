@@ -24,7 +24,19 @@ body {
 .smallText {
 	font-size: small;
   }
+/* loading gif: */
+.loading {
+	box-shadow: none;
+	display: block;
+	margin: auto;
+	left: 50%;
+	bottom: 50%;
+}
 /* components styling */
+.notFoundRoute {
+	text-align: center;
+	padding-top: 80px;
+}
 .header {
   display: flex;
   justify-content: space-between;

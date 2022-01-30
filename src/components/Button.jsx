@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 
 
-const Button = ({buttonTitle, style, onToggle, price}) => {
+const Button = ({buttonTitle, style}) => {
     return (
         <div className="box bg-1">
-        <button className="button planButton button--border-thick button--text-upper button--size-s" style={style}>{buttonTitle}</button>
+        <button data-testid="button" className="button planButton button--border-thick button--text-upper button--size-s" style={style}>{buttonTitle}</button>
 </div>
     )
 }
