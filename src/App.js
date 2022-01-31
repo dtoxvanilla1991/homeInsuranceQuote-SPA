@@ -1,11 +1,11 @@
-import Navigation from "./components/Navbar";
+import Navigation from "./components/Navbar/Navbar";
 import React, { useState, useEffect, lazy } from "react";
 import useFetch from "react-fetch-hook";
-import AddonsCard from "./components/AddonsCard";
+import AddonsCard from "./components/AddonsCard/AddonsCard";
 import Footer from "./components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
-import GetNewQuote from "./components/GetNewQuote";
-import Default404 from "./components/Default404";
+import GetNewQuote from "./Pages/NewQuote/GetNewQuote";
+import Default404 from "./Pages/NotFound/Default404";
 import loadingGif from './assets/loading.gif';
 import styles from './App.module.css';
 
@@ -132,7 +132,7 @@ function App() {
   };
 
   //lazing loading necessary files:
-  const About = lazy(() => import('./components/About'));
+  const About = lazy(() => import('./Pages/About/About'));
 
   return (
     <>

@@ -1,6 +1,6 @@
-import happyPic from '../assets/family-big.jpg';
-import happyPicMidSize from '../assets/family-midsize.jpg';
-import Button from './Button';
+import happyPic from '../../assets/family-big.jpg';
+import happyPicMidSize from '../../assets/family-midsize.jpg';
+import Button from '../../components/Button/Button';
 import{Link } from 'react-router-dom';
 
 const About = () => {

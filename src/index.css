@@ -14,9 +14,6 @@ body {
 	justify-content: space-between;
 	align-items: center;
 }
-.smallText {
-	font-size: small;
-  }
 /* loading gif: */
 .loading {
 	box-shadow: none;
@@ -74,18 +71,7 @@ body {
 
   box-shadow: 0 20px 40px rgba(0,0,0,0.30), 0 15px 12px rgba(31, 51, 161, 0.4) inset;
 }
-.cardTitle {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	margin-bottom:1em;
-}
-.buttonCard {
-	margin-top:1em;
-	position: absolute;
-	bottom: 12%;
-	right: 5%;
-}
+
 .button {
 	float: none;
 	min-width: 150px;

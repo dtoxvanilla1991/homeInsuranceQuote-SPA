@@ -1,5 +1,5 @@
-import QuoteCard from './QuoteCard';
-import PriceCard from './PriceCard';
+import QuoteCard from '../QuoteCard/QuoteCard';
+import PriceCard from '../PriceCard/PriceCard';
 
 
 const Header = ({userData, price, onToggle}) => {
