@@ -12,7 +12,7 @@
 
   <p align="center">
     <br />
-    <a href="https://github.com/dtoxvanilla1991/Cat-Shelter-Catalog.git"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/dtoxvanilla1991/homeInsuranceQuote-SPA"><strong>Explore the docs »</strong></a>
     <!-- <br />
     <br />
     <a href="">View Demo</a>
@@ -47,7 +47,7 @@
 
 ## About The App
 
-Single page application built on React.js app, featuring new section of the Home Insurance product. This new section is a quote summary page which allows the user to add various addons to their quote.
+React.js app SPA, featuring new section of the Home Insurance Company "REST" product. This new section is a quote summary page which allows the user to add various addons to their quote.
 
 A user is able to add, remove extras to his/her quote. Moreover, the user is always visually able to see which addons he/she selected along with the accurate total price, having a convenient ability to toggle in between monthly and annual quote price.
 
