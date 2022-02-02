@@ -7,13 +7,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.extras {
-	display: inline-flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-}
 /* loading gif: */
 .loading {
 	box-shadow: none;
@@ -23,29 +16,7 @@ body {
 	bottom: 50%;
 }
 /* components styling */
-.notFoundRoute {
-	text-align: center;
-	padding-top: 80px;
-}
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
 
-.priceCard {
-  width: 45%;
-  height: 250px;
-  border: 1px solid black;
-  padding: 2rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 15px;
-
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-}
 .addonsCard-notSelected {
   width: 45%;
   height: 240px;
@@ -72,23 +43,6 @@ body {
   box-shadow: 0 20px 40px rgba(0,0,0,0.30), 0 15px 12px rgba(31, 51, 161, 0.4) inset;
 }
 
-.button {
-	float: none;
-	min-width: 150px;
-	max-width: 250px;
-	display: block;
-	margin: 0 auto;
-	padding: 1em 2em;
-	border: none;
-	background: none;
-	color: inherit;
-	vertical-align: middle;
-	position: relative;
-	z-index: 1;
-	-webkit-backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-}
-
 .about {
 
 	display: block;
@@ -107,74 +61,4 @@ img {
 
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 
-}
-
-/* buttons styling */
-
-.button--size-s {
-	font-size: 12px;
-}
-.button:focus {
-	outline: none;
-}
-.button > span {
-	vertical-align: middle;
-}
-/* Wayra */
-.planButton {
-	overflow: hidden;
-	width: 245px;
-	-webkit-transition: border-color 0.3s, color 0.3s;
-	transition: border-color 0.3s, color 0.3s;
-	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-}
-.planButton::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 150%;
-	height: 100%;
-	background: #37474f;
-	z-index: -1;
-	-webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-	transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-	-webkit-transform-origin: 0% 100%;
-	transform-origin: 0% 100%;
-	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
-	transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
-}
-.planButton:hover {
-	color: #fff;
-	border-color: #3f51b5;
-}
-.planButton.button--inverted:hover {
-	color: #3f51b5;
-	border-color: #fff;
-}
-.planButton:hover::before {
-	opacity: 1;
-	background-color: #485081;
-	-webkit-transform: rotate3d(0, 0, 1, 0deg);
-	transform: rotate3d(0, 0, 1, 0deg);
-	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-}
-.planButton.button--inverted:hover::before {
-	background-color: #fff;
-}
-/* button borders */
-.button--border-thick {
-	border: 3px solid;
-}
-/* Typography and Roundedness */
-.button--text-upper {
-	letter-spacing: 2px;
-	text-transform: uppercase;
-}
-/* Box colors */
-.bg-1 {
-	/* background: #ECEFF1; */
-	color: #37474f;
 }

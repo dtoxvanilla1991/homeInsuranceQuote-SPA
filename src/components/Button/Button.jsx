@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import classes from './Button.module.css';
 
 
 const Button = ({buttonTitle, style}) => {
     return (
-        <div className="box bg-1">
-        <button data-testid="button" className="button planButton button--border-thick button--text-upper button--size-s" style={style}>{buttonTitle}</button>
+        <div className={`box ${classes.bg-1}`}>
+        <button data-testid="button" className={`${classes.button} ${classes.planButton} ${classes.buttonBorderThick} ${classes.buttonTextUpper} ${classes.buttonSizeSmall}`} style={style}>{buttonTitle}</button>
 </div>
     )
 }

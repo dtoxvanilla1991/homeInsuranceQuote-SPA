@@ -1,16 +1,19 @@
 import Button from "../Button/Button";
+import classes from './PriceCard.module.css';
 
 const PriceCard = ({onToggle, price}) => {
 
+    let monthOrYear = price[1] === "month" ? "year" : "month";
+
     return (
-        <div className="priceCard">
+        <div className={classes.priceCard}>
             <h1> £{price[0]}</h1>
             <h4>per {price[1]}</h4>
-            <p className="smallText">This price includes Insurance Premium Tax at the
+            <p className={classes.smallText}>This price includes Insurance Premium Tax at the
             <br/>
             current rate. No charge for paying monthly.</p>
             <div onClick={() => onToggle()}>
-        <Button buttonTitle="Switch to annual" style={{padding: '1em 2em'}}/>
+        <Button buttonTitle={`Switch to ${monthOrYear}`} style={{padding: '1em 2em'}}/>
             </div>
         </div>
     )

@@ -6,8 +6,9 @@ import Footer from "./components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import GetNewQuote from "./Pages/NewQuote/GetNewQuote";
 import Default404 from "./Pages/NotFound/Default404";
-import loadingGif from './assets/loading.gif';
-import styles from './App.module.css';
+import loadingGif from "./assets/loading.gif";
+import styles from "./App.module.css";
+import { fetchingData } from "./services";
 
 function App() {
   const [userData, setData] = useState(null);
@@ -21,22 +22,21 @@ function App() {
     "http://localhost:4500/addons"
   );
   useEffect(() => {
-    fetch("http://localhost:4500/quote")
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
-        }
-        throw res;
+    fetchingData()
+      .then((userData) => {
+        setData(userData);
       })
-      .then((userData) => setData(userData))
       .catch((err) => {
         console.error("Error fetching data: ", err);
         setError(err);
       })
-      .finally(() => setLoading(false));
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
 
-  if (loading || isLoading) return <img className="loading" src={loadingGif} alt="loading..." />;
+  if (loading || isLoading)
+    return <img className="loading" src={loadingGif} alt="loading..." />;
   if (error || addonsError) {
     return (
       <div>
@@ -132,7 +132,7 @@ function App() {
   };
 
   //lazing loading necessary files:
-  const About = lazy(() => import('./Pages/About/About'));
+  const About = lazy(() => import("./Pages/About/About"));
 
   return (
     <>

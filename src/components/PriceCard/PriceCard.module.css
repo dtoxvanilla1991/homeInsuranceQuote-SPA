@@ -1,0 +1,15 @@
+.priceCard {
+    width: 45%;
+    height: 250px;
+    border: 1px solid black;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+  
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.smallText {
+	font-size: small;
+}
