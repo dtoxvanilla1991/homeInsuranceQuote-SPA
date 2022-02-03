@@ -133,6 +133,9 @@ function App() {
 
   //lazing loading necessary files:
   const About = lazy(() => import("./Pages/About/About"));
+  const Billing = lazy (()=> import("./Pages/Billing/Billing"));
+  const ContactUs = lazy(()=> import("./Pages/ContactUs/Contactus"));
+  const LoginSignup = lazy(()=> import("./Pages/LoginSignup/LoginSignup"));
 
   return (
     <>
@@ -154,6 +157,9 @@ function App() {
             }
           />
           <Route path="/about" element={<About />} />
+          <Route path="/login" element={<LoginSignup />} />
+          <Route path="/billing" element={<Billing />} />
+          <Route path="/contactus" element={<ContactUs />} />
           <Route path="*" element={<Default404 />} />
         </Routes>
         <Footer />
