@@ -3,7 +3,7 @@ import classes from './PriceCard.module.css';
 
 const PriceCard = ({onToggle, price}) => {
 
-    let monthOrYear = price[1] === "month" ? "year" : "month";
+    let monthOrYear = price[1] === "month" ? "annual plan" : "monthly";
 
     return (
         <div className={classes.priceCard}>

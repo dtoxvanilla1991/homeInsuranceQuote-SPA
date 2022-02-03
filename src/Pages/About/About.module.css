@@ -1,0 +1,13 @@
+.about {
+
+	display: block;
+	flex-wrap: wrap;
+	text-align: center;
+	align-content: center;
+   margin-bottom: 110px;
+
+}
+.link {
+	text-decoration: none;
+	color: black;
+ }

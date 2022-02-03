@@ -51,7 +51,7 @@ React.js app SPA, featuring new section of the Home Insurance Company "REST" pro
 
 A user is able to add, remove extras to his/her quote. Moreover, the user is always visually able to see which addons he/she selected along with the accurate total price, having a convenient ability to toggle in between monthly and annual quote price.
 
-The task was approached using functional components with hooks(useState, useEffect and useFetch), deriving all the data from mock API for the purpose of the task. Both useEffect and useFetch have been used to retreive the data merely for demostration purposes, although I personally prefer useFetch in my work projects. Navbar was added and made responsive for a better experience. Styled components were used for the wrapping containers with a purpose of demostration of the knowledge and understanding of the library. 
+The task was approached using functional components with hooks(useState, useEffect and useFetch), deriving all the data from mock API for the purpose of the task. Both useEffect and useFetch have been used to retreive the data merely for demostration purposes, although I personally prefer useFetch in my work projects. Navbar was added and made responsive for a better experience. Styled components were used for the wrapping containers with a purpose of demostration of the knowledge and understanding of the library. Implemented React lazy loading for pages to improve user experience.
 
 Routing implemented with the newest React.js Router-Dom update v6. Footer added with "About" page for demonstration purposes.
 All logic functionality has been accomplished using states to properly rerender the React DOM. 

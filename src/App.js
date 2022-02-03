@@ -85,7 +85,7 @@ function App() {
         !addon.active ? "Remove this addon" : "Select this addon";
       //Style of the selected card:
       const stylingCardToggle = () =>
-        !addon.active ? "addonsCard-selected" : "addonsCard-notSelected";
+        !addon.active ? styles.addonsCardSelected : styles.addonsCardNotSelected;
       //Button innerText:
       const SelectedCard = (id) => {
         setAddons(

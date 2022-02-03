@@ -69,11 +69,11 @@
 	background-color: #fff;
 }
 /* button borders */
-.buttonBorderThick {
+.button-border-thick {
 	border: 3px solid;
 }
 /* Typography and Roundedness */
-.buttonTextUpper {
+.button-text-upper {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
