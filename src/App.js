@@ -1,5 +1,5 @@
 import Navigation from "./components/Navbar/Navbar";
-import React, { useState, useEffect, lazy } from "react";
+import React, { useState, lazy, useEffect } from "react";
 import useFetch from "react-fetch-hook";
 import AddonsCard from "./components/AddonsCard/AddonsCard";
 import Footer from "./components/Footer/Footer";
@@ -8,43 +8,41 @@ import GetNewQuote from "./Pages/NewQuote/GetNewQuote";
 import Default404 from "./Pages/NotFound/Default404";
 import loadingGif from "./assets/loading.gif";
 import styles from "./App.module.css";
-import { fetchingData } from "./services";
+// import { fetchingData } from "./services";
+import { useSelector, useDispatch } from "react-redux";
+import { FetchUserData } from "./actions/userDataActions";
 
 function App() {
-  const [userData, setData] = useState(null);
+  // const [userData, setData] = useState(null);
   const [addons, setAddons] = useState(null);
   let [quotePrice, setPrice] = useState(null);
   const [priceChange, setPriceChange] = useState(false);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
+  const [loading, setLoading] = useState(false);
+  // const [error, setError] = useState(null);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    // console.log('HERE')
+    dispatch(FetchUserData());
+  }, []);
   const { isLoading, addonsError, data } = useFetch(
     "http://localhost:4500/addons"
   );
-  useEffect(() => {
-    fetchingData()
-      .then((userData) => {
-        setData(userData);
-      })
-      .catch((err) => {
-        console.error("Error fetching data: ", err);
-        setError(err);
-      })
-      .finally(() => {
-        setLoading(false);
-      });
-  }, []);
+  //getting all the data from the state:
+  const userData = useSelector(state => state.userData);
+  // if(userData){
+  //   setLoading(!loading);
+  // }
+  if (loading || isLoading) return <img className="loading" src={loadingGif} alt="loading..." />;
 
-  if (loading || isLoading)
-    return <img className="loading" src={loadingGif} alt="loading..." />;
-  if (error || addonsError) {
+  if (addonsError) {
     return (
       <div>
-        <p>Code: ${error.status}</p>
-        <p>Message: ${error.statusText}</p>
+        <p>Code: ${addonsError.status}</p>
+        <p>Message: ${addonsError.statusText}</p>
       </div>
     );
   }
+
   //getting original data:
   if (!quotePrice) {
     setPrice([userData[0].monthlyPrice, "month"]);
@@ -85,7 +83,9 @@ function App() {
         !addon.active ? "Remove this addon" : "Select this addon";
       //Style of the selected card:
       const stylingCardToggle = () =>
-        !addon.active ? styles.addonsCardSelected : styles.addonsCardNotSelected;
+        !addon.active
+          ? styles.addonsCardSelected
+          : styles.addonsCardNotSelected;
       //Button innerText:
       const SelectedCard = (id) => {
         setAddons(
@@ -109,7 +109,7 @@ function App() {
         />
       );
     });
-  };
+  }
   //toggling monthly/yearly view on PriceCard:
   const togglePrice = () => {
     setAddons(data);
@@ -133,9 +133,9 @@ function App() {
 
   //lazing loading necessary files:
   const About = lazy(() => import("./Pages/About/About"));
-  const Billing = lazy (()=> import("./Pages/Billing/Billing"));
-  const ContactUs = lazy(()=> import("./Pages/ContactUs/Contactus"));
-  const LoginSignup = lazy(()=> import("./Pages/LoginSignup/LoginSignup"));
+  const Billing = lazy(() => import("./Pages/Billing/Billing"));
+  const ContactUs = lazy(() => import("./Pages/ContactUs/Contactus"));
+  const LoginSignup = lazy(() => import("./Pages/LoginSignup/LoginSignup"));
 
   return (
     <>
