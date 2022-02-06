@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     // console.log('HERE')
     dispatch(FetchUserData());
-  }, []);
+  }, [dispatch]);
   const { isLoading, addonsError, data } = useFetch(
     "http://localhost:4500/addons"
   );
