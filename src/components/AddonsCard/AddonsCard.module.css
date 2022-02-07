@@ -10,6 +10,28 @@
 .buttonCard {
 	margin-top:1em;
 	position: absolute;
-	bottom: 12%;
+	bottom: 10%;
 	right: 5%;
+}
+
+@media (max-width: 1200px) {
+	.cardTitle {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom:1em;
+		font-size: medium;
+	}
+	h4 {
+		font-size: large;
+	}
+	.smallText {
+		font-size: small;
+	}
+	.buttonCard {
+		margin: 0px;
+		position: absolute;
+		bottom: 5%;
+		right: 16%;
+	}
 }

@@ -55,7 +55,7 @@ The task was originally approached using functional components with hooks(useSta
 
 UPDATE 01/22/2022: Routing implemented with the newest React.js Router-Dom update v6 once it came out. Footer added with "About" page for demonstration purposes.All logic functionality has been accomplished using states to properly rerender the React DOM. Index.css files optimized and modele.css files created for all components for a better organization of the code.
 
-UPDATE 02/06/2022: React Redux and its @toolkit was implemented on 2/6/2022 update, taking over the state management. Navbar enchanced with creative css only styled Login/Signup Page.
+UPDATE 02/06/2022: React Redux and its @toolkit was implemented on 2/6/2022 update, taking over the state management(I understand the true unnecessary nature of Redux in this app as it is not a large-scale web product, but it was done for the demonstration purposes). Navbar enchanced with creative css only styled Login/Signup Page.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>

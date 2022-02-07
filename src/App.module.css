@@ -33,3 +33,6 @@
   .addonsCardNotSelected:hover{
 	  transform: scale(0.98);
   }
+@media (min-width: 1200px) {
+	
+}
