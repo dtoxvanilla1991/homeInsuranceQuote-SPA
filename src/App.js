@@ -29,9 +29,7 @@ function App() {
   );
   //getting all the data from the state:
   const userData = useSelector(state => state.userData);
-  // if(userData){
-  //   setLoading(!loading);
-  // }
+
   if (loading || isLoading) return <img className="loading" src={loadingGif} alt="loading..." />;
 
   if (addonsError) {
@@ -136,14 +134,16 @@ function App() {
   const Billing = lazy(() => import("./Pages/Billing/Billing"));
   const ContactUs = lazy(() => import("./Pages/ContactUs/Contactus"));
   const LoginSignup = lazy(() => import("./Pages/LoginSignup/LoginSignup"));
+  const Main = lazy(() => import("./Pages/Main/Main"));
 
   return (
     <>
       <Navigation />
       <div className={styles.pageWrapper}>
         <Routes>
+          <Route path="/" element={<Main />} />
           <Route
-            path="/"
+            path="/newquote"
             element={
               <>
                 <GetNewQuote
