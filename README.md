@@ -56,6 +56,7 @@ The task was originally approached using functional components with hooks(useSta
 UPDATE 01/22/2022: Routing implemented with the newest React.js Router-Dom update v6 once it came out. Footer added with "About" page for demonstration purposes.All logic functionality has been accomplished using states to properly rerender the React DOM. Index.css files optimized and modele.css files created for all components for a better organization of the code.
 
 UPDATE 02/06/2022: React Redux and its @toolkit was implemented on 2/6/2022 update, taking over the state management(I understand the true unnecessary nature of Redux in this app as it is not a large-scale web product, but it was done for the demonstration purposes). Navbar enchanced with creative css only styled Login/Signup Page.
+UPDATE 02/17/2022: Many additions made: landing page, billing page, contact us page. Full Redux integration. Completely optimized for mobile responsiveness.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -75,7 +76,11 @@ Frameworks/libraries/languages used:
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-<img width="1075" alt="image" src="https://user-images.githubusercontent.com/73205087/154560029-2571ee01-a2eb-4eb5-bf89-df9c1c48da1c.png">
+<img width="1000" alt="image" src="https://user-images.githubusercontent.com/73205087/154560268-e68b48a1-accf-472f-a5e6-0e0d16cd820d.png">
+<img width="990" alt="image" src="https://user-images.githubusercontent.com/73205087/154560381-713603c5-710d-4496-bb7b-6bea2ecbc3f6.png">
+<img width="986" alt="image" src="https://user-images.githubusercontent.com/73205087/154560536-3ca3df6a-dea1-4fdf-a55c-22e85b231e0f.png">
+<img width="505" alt="image" src="https://user-images.githubusercontent.com/73205087/154560635-e8553523-f7fa-4a3e-a68d-62cf56b995b8.png">
+
 <!-- GETTING STARTED -->
 
 ## Getting Started
