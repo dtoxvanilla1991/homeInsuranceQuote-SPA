@@ -2,7 +2,6 @@
 *, *::before, *::after {
   box-sizing:border-box;
 }
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,6 +9,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(assets/backgroundImageJPG.jpg);
+  background-repeat: repeat-y;
+  background-attachment: scroll;
+
 }
 /* loading gif: */
 .loading {

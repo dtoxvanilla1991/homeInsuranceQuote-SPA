@@ -9,7 +9,7 @@ import Button from "../../components/Button/Button";
 const Main = () => {
 
   const buttonFont = {
-    padding: "1em", borderRadius: "25px", fontSize: '1em' 
+    padding: "0.6em", borderRadius: "25px", fontSize: '1em' 
   };
 
   return (
@@ -34,31 +34,31 @@ const Main = () => {
           </div>
         </section>
         <section className={classes['mid-section']}>
-          <div className={classes.mainSection}>
+          <div className={classes["top-section"]}>
             <div className={classes.col}>
             <h4>REST makes a difference</h4>
-            <p>We give businesses the safety to thrive, with exceptional insurance products and a reliable claims service, driven by experts at every stage.</p>
+            <p>Being a single parent should be easier, with exceptional insurance products and a reliable claims service, driven by experts at every stage, we can make it happen.</p>
             </div>
             <div className={classes.col}>
             <img src={mainTopPhoto} alt="REST makes a difference" />
             </div>
           </div>
-          <div className={classes.mainSection}>
+          <div className={classes["top-section"]}>
           <div className={classes.col}>
-            <img src={mainMidPhoto} alt="REST makes a difference" />
+            <img src={mainMidPhoto} alt="HOME INSURANCE" />
             </div>
           <div className={classes.col}>
             <h4>HOME INSURANCE</h4>
             <p>Personal buildings and contents insurance, backed by a fast and reliable claims service. Discover two exceptional home insurance products, honed to people’s needs.</p>
             </div>
           </div>
-          <div className={classes.mainSection}>
+          <div className={classes["top-section"]}>
           <div className={classes.col}>
             <h4>HOW TO MAKE A CLAIM</h4>
             <p>Find the details you need for the policy you have – with clear next steps and contact details.</p>
             </div>
             <div className={classes.col}>
-            <img src={mainBottomPhoto} alt="REST makes a difference" />
+            <img src={mainBottomPhoto} alt="HOW TO MAKE A CLAIM" />
             </div>
           </div>
         </section>

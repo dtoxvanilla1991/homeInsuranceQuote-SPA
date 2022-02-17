@@ -11,7 +11,6 @@ import styles from "./App.module.css";
 // import { fetchingData } from "./services";
 import { useSelector, useDispatch } from "react-redux";
 import { FetchUserData } from "./actions/userDataActions";
-import bgImage from './assets/backgroundImage.jpg';
 
 function App() {
   // const [userData, setData] = useState(null);
@@ -139,7 +138,6 @@ function App() {
 
   return (
     <>
-    <img src={bgImage} id="bg" alt="background houses" />
       <Navigation />
       <div className={styles.pageWrapper}>
         <Routes>

@@ -1,23 +1,24 @@
-.mainPage {
+.mainPage:hover {
 transform: scale(0.98);
 }
 .top-section {
     display: flex;
-    max-width: 100%;
     justify-content: space-between;
-    margin-bottom: 5em;
+    margin-bottom: 7em;
+    align-items: center;
 }
 .mid-section {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5em;
     flex-direction: column;
+
 }
 .singleMom {
-    max-width: 48%;
+    width: 48%;
 }
 .singleDad {
-    max-width: 48%;
+    width: 48%;
 }
 .singleMom img {
     margin-bottom: 2em;
@@ -25,21 +26,36 @@ transform: scale(0.98);
 .singleDad img {
     margin-bottom: 2em;
 }
-.mainSection {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom:5em
-}
 .col {
     width: 50%;
-    font-size: 1.5rem;
-    
+    font-size: 1.4em;
 }
-.col img {
-    width: 90%;
-    max-height: 25em;
-}
+
 h4 {
-    padding-top: 2em;
     font-size: 2rem;
+}
+.buttonFront {
+    padding: "0.6em";
+    border-radius: "25px";
+    font-size: '1em'
+}
+@media screen and (max-width: 768px) {
+    .top-section {
+        display: block;
+        max-width: 100%;
+        justify-content: space-between;
+        margin-bottom: 7em;
+        align-items: center;
+    }
+    .col, .singleMom, .singleDad {
+        width: 100%;
+        font-size: 1em;
+    }
+    .col img {
+        margin-top: 1rem;
+    }
+    .singleDad {
+        margin-top: 2rem;
+    }
+
 }
