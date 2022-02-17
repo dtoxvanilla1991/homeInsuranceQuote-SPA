@@ -75,7 +75,7 @@ Frameworks/libraries/languages used:
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
+<img width="1075" alt="image" src="https://user-images.githubusercontent.com/73205087/154560029-2571ee01-a2eb-4eb5-bf89-df9c1c48da1c.png">
 <!-- GETTING STARTED -->
 
 ## Getting Started
