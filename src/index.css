@@ -512,23 +512,6 @@ background: #131313;
 /* ---------------END OF CONTACT US PAGE --------------- */
 /* ------------------------------------------------------ */
 /* ---------------------BILLING PAGE STYLING----------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
-@import url(https://fonts.googleapis.com/css?family=Knewave);@import url(https://fonts.googleapis.com/css?family=Luckiest+Guy);
-body{
-  background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/robots.png);
-  
-  font-family: 'Lato', sans-serif;
-}
-
-h1{
-  color: #ffffff;
-  font-family: 'Luckiest Guy', cursive;
-  font-size: 30px;
-  letter-spacing: 10px;
-  margin: 25px;
-  text-align: center;
-  text-transform: uppercase;
-}
 
 .wrap{
   background-color: #ffffff;
@@ -549,7 +532,7 @@ h1{
   padding: 30px 20px;
   overflow: auto;
   width: 640px;
-  margin-bottom: 10em;
+  margin: 10em auto;
 }
 
 .shipping{
@@ -563,7 +546,7 @@ h1{
   width: 300px;
 }
 
-h2{
+.billingH2 {
   color: #394aaa;
   margin: 0px 0px 0px 15px;
   padding: 0px;
@@ -573,7 +556,6 @@ h2{
 input{
   background-color: #f2f2f2;
   border: 1px solid #c8c8c8;
-  font-family: 'Oxygen', sans-serif;
   
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -590,7 +572,6 @@ input{
 select{
   background-color: #f2f2f2;
   border: 1px solid #c8c8c8;
-  font-family: 'Oxygen', sans-serif;
   
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
