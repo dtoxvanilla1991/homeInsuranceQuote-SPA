@@ -6,7 +6,7 @@ const LoginSignup = () => {
 
 <div className="login-wrap">
 	<div className="login-html">
-		<input id="tab-1" type="radio" name="tab" className="sign-in" checked/><label htmlFor="tab-1" className="tab">Sign In</label>
+		<input id="tab-1" type="radio" name="tab" className="sign-in" defaultChecked/><label htmlFor="tab-1" className="tab">Sign In</label>
 		<input id="tab-2" type="radio" name="tab" className="sign-up"/><label htmlFor="tab-2" className="tab">Sign Up</label>
 		<div className="login-form">
 			<div className="sign-in-htm">
@@ -19,7 +19,7 @@ const LoginSignup = () => {
 					<input id="pass" type="password" className="input" data-type="password"/>
 				</div>
 				<div className="group">
-					<input id="check" type="checkbox" className="check" checked/>
+					<input id="check" type="checkbox" className="check" defaultChecked/>
 					<label htmlFor="check"><span className="icon"></span> Keep me Signed in</label>
 				</div>
 				<div className="group">
