@@ -8,7 +8,7 @@
 <br />
 <div align="center">
 
-  <h1 align="center">Insurance Quote SPA</h1>
+  <h1 align="center">REST Home Insurance</h1>
 
   <p align="center">
     <br />
@@ -47,7 +47,7 @@
 
 ## About The App
 
-React.js app SPA, featuring new section of the Home Insurance Company "REST" product. This new section is a quote summary page which allows the user to add various addons to their quote.
+REST Home Insurance web product, built and designed to support single parents, by protecting things most important to them. Featuring new section of the Home Insurance Company "REST" product. This new section is a quote summary page which allows the user to add various addons to their quote.
 
 A user is able to add, remove extras to his/her quote. Moreover, the user is always visually able to see which addons he/she selected along with the accurate total price, having a convenient ability to toggle in between monthly and annual quote price.
 
