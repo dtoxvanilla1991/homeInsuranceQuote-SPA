@@ -79,7 +79,7 @@ Frameworks/libraries/languages used:
 <img width="1000" alt="image" src="https://user-images.githubusercontent.com/73205087/154560268-e68b48a1-accf-472f-a5e6-0e0d16cd820d.png">
 <img width="990" alt="image" src="https://user-images.githubusercontent.com/73205087/154560381-713603c5-710d-4496-bb7b-6bea2ecbc3f6.png">
 <img width="997" alt="image" src="https://user-images.githubusercontent.com/73205087/154581165-fcd57ff7-85b4-41af-9de7-02c2d0696ade.png">
-<img width="1032" alt="image" src="https://user-images.githubusercontent.com/73205087/154580902-d31a4ee4-2a82-4525-af55-31b31888ad4a.png">
+<img width="1002" alt="image" src="https://user-images.githubusercontent.com/73205087/154581459-a3d9aa0e-5a66-42c4-9e36-16efa0dbb0b6.png">
 <img width="505" alt="image" src="https://user-images.githubusercontent.com/73205087/154560635-e8553523-f7fa-4a3e-a68d-62cf56b995b8.png">
 
 <!-- GETTING STARTED -->
