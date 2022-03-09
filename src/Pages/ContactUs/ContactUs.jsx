@@ -3,21 +3,21 @@
 const ContactUs = () => {
   return <div>
 
-<section class="contact-address-area">
-    <div class="container">
-        <div class="sec-title-style1 text-center max-width">
-            <div class="title">Contact Us</div>
-            <div class="text"><div class="decor-left"><span></span></div><p>Quick Contact</p><div class="decor-right"><span></span></div></div>
-            <div class="bottom-text">
+<section className="contact-address-area">
+    <div className="container">
+        <div className="sec-title-style1 text-center max-width">
+            <div className="title">Contact Us</div>
+            <div className="text"><div className="decor-left"><span></span></div><p>Quick Contact</p><div className="decor-right"><span></span></div></div>
+            <div className="bottom-text">
                 <p>REST Home Insurance is proud to be the name that nearly 1 million single mom or dad homeowners have trusted since 1996 for home prosperity, safety and repair, providing virtually any home insurance service possible.</p>
             </div>
         </div>
-                <div class="contact-address-box row">
+                <div className="contact-address-box row">
                     {/* <!--Start Single Contact Address Box--> */}
-                    <div class="col-sm-4 single-contact-address-box text-center">
-                        <div class="icon-holder">
-                            <span class="icon-clock-1">
-                                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span>
+                    <div className="col-sm-4 single-contact-address-box text-center">
+                        <div className="icon-holder">
+                            <span className="icon-clock-1">
+                                <span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span><span className="path5"></span><span className="path6"></span><span className="path7"></span><span className="path8"></span><span className="path9"></span><span className="path10"></span><span className="path11"></span><span className="path12"></span><span className="path13"></span><span className="path14"></span><span className="path15"></span><span className="path16"></span><span className="path17"></span><span className="path18"></span><span className="path19"></span><span className="path20"></span>
                             </span>
                         </div>
                         <h3>Rest assured</h3>
@@ -25,31 +25,31 @@ const ContactUs = () => {
                     </div>
                     {/* <!--End Single Contact Address Box-->
                     <!--Start Single Contact Address Box--> */}
-                    <div class="col-sm-4 single-contact-address-box main-branch">
+                    <div className="col-sm-4 single-contact-address-box main-branch">
                         <h3>OUR DETAILS:</h3>
-                        <div class="inner">
+                        <div className="inner">
                             <ul>
                                 <li>
-                                    <div class="title">
+                                    <div className="title">
                                         <h4>Address:</h4>
                                     </div>
-                                    <div class="text">
+                                    <div className="text">
                                         <p>05 Beacons Close, 40C<br/> London, UK E96TT</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="title">
+                                    <div className="title">
                                         <h4>Ph & Fax:</h4>
                                     </div>
-                                    <div class="text">
+                                    <div className="text">
                                         <p>+123 456 789 <br/> test@info.com</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="title">
+                                    <div className="title">
                                         <h4>Office Hrs:</h4>
                                     </div>
-                                    <div class="text">
+                                    <div className="text">
                                         <p>Mon-Fri: 9:30am - 6:30pm<br/> Sat-Sun: Closed</p>
                                     </div>
                                 </li>
@@ -58,10 +58,10 @@ const ContactUs = () => {
                     </div>
                     {/* <!--End Single Contact Address Box-->
                     <!--Start Single Contact Address Box--> */}
-                    <div class="col-sm-4 single-contact-address-box text-center">
-                        <div class="icon-holder">
-                            <span class="icon-question-2">
-                                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                    <div className="col-sm-4 single-contact-address-box text-center">
+                        <div className="icon-holder">
+                            <span className="icon-question-2">
+                                <span className="path1"></span><span className="path2"></span><span className="path3"></span><span className="path4"></span>
                             </span>
                         </div>
                         <h3>Be insured</h3>
@@ -74,59 +74,59 @@ const ContactUs = () => {
 {/* <!--End Contact Address Area-->  
  
 <!--Start contact form area--> */}
-<section class="contact-info-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                <div class="contact-form">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="sec-title-style1 float-left">
-                                <div class="title">Send Your Message</div>
-                                <div class="text"><div class="decor-left"><span></span></div><p>Contact Form</p></div>
+<section className="contact-info-area">
+    <div className="container">
+        <div className="row">
+            <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div className="contact-form">
+                    <div className="row">
+                        <div className="col-xl-12">
+                            <div className="sec-title-style1 float-left">
+                                <div className="title">Send Your Message</div>
+                                <div className="text"><div className="decor-left"><span></span></div><p>Contact Form</p></div>
                             </div>
-                            <div class="text-box float-right">
+                            <div className="text-box float-right">
                                 <p>Would you be so kind to relay your message to us and our agents will do their best to get back to you within 48 hours. </p>
                             </div>
                         </div> 
                     </div>   
-                    <div class="inner-box">
-                        <form id="contact-form" name="contact_form" class="default-form" action="inc/sendmail.php" method="post">
-                            <div class="row">
-                                <div class="col-xl-6 col-lg-12">
-                                    <div class="row">
-                                        <div class="col-xl-6">
-                                            <div class="input-box">   
+                    <div className="inner-box">
+                        <form id="contact-form" name="contact_form" className="default-form" action="inc/sendmail.php" method="post">
+                            <div className="row">
+                                <div className="col-xl-6 col-lg-12">
+                                    <div className="row">
+                                        <div className="col-xl-6">
+                                            <div className="input-box">   
                                                 <input type="text" name="form_name" value="" placeholder="Name" required=""/>
                                             </div> 
-                                             <div class="input-box"> 
+                                             <div className="input-box"> 
                                                 <input type="text" name="form_phone" value="" placeholder="Phone"/>
                                             </div>
                                         </div>
-                                        <div class="col-xl-6">
-                                            <div class="input-box"> 
+                                        <div className="col-xl-6">
+                                            <div className="input-box"> 
                                                 <input type="email" name="form_email" value="" placeholder="Email" required=""/>
                                             </div>
-                                            <div class="input-box"> 
+                                            <div className="input-box"> 
                                                 <input type="text" name="form_website" value="" placeholder="Website"/>
                                             </div> 
                                         </div>  
                                     </div> 
-                                    <div class="row">
-                                         <div class="col-xl-12">
-                                            <div class="input-box"> 
+                                    <div className="row">
+                                         <div className="col-xl-12">
+                                            <div className="input-box"> 
                                                 <input type="text" name="form_subject" value="" placeholder="Subject"/>
                                             </div>     
                                         </div> 
                                     </div>   
                                 </div>
-                                <div class="col-xl-6 col-lg-12">
-                                    <div class="input-box">    
+                                <div className="col-xl-6 col-lg-12">
+                                    <div className="input-box">    
                                         <textarea name="form_message" placeholder="Your Message..." required=""></textarea>
                                     </div>
-                                    <div class="button-box">
-                                        <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value=""/>
-                                        <button type="submit" data-loading-text="Please wait...">Send Message<span class="flaticon-next"></span></button>    
+                                    <div className="button-box">
+                                        <input id="form_botcheck" name="form_botcheck" className="form-control" type="hidden" value=""/>
+                                        <button type="submit" data-loading-text="Please wait...">Send Message<span className="flaticon-next"></span></button>    
                                     </div>         
                                 </div> 
                             </div>
